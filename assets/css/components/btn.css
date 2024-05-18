@@ -11,24 +11,25 @@
 
 
 .btn {
-  background-color: var(--orange-red);
+  background-color: var(--button);
   font-size: var(--fs-14);
   font-weight: var(--fw-500);
   text-transform: uppercase;
   max-width: max-content;
   letter-spacing: 2px;
   padding: 10px 22px;
-  box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--jet));
+  /* box-shadow: 2px 0px 0 -1px var(--shadow-color, var(--black)); */
   transition: var(--transition-1);
 }
 
 .btn:is(:hover, :focus-visible) {
-  background-color: var(--hover-bg, var(--jet));
-  box-shadow: 5px 5px 0 -2px var(--hover-shadow-color, var(--orange-red));
+  background-color: var(--black, var(--jet));
+  /* transform: translate3d(2px, -2px, 0); */
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 }
 
 .btn-primary,
-.btn-secondary { color: var(--white); }
+.btn-secondary { color: var(--white_a75); }
 
 .btn-secondary {
   background-color: var(--jet);
@@ -39,10 +40,10 @@
 
 .btn-tertiary {
   color: var(--jet);
-  background-color: var(--maximum-yellow-red);
-  --shadow-color: var(--orange-red);
-  --hover-bg: var(--orange-red);
-  --hover-shadow-color: var(--maximum-yellow-red);
+  background-color: var(--white_a75);
+  --shadow-color: var(--black);
+  --hover-bg: var(--black);
+  --hover-shadow-color: var(--white_a75);
 }
 
-.btn-tertiary:is(:hover, :focus-visible) { color: var(--white); }
+.btn-tertiary:is(:hover, :focus-visible) { color: var(--white_a75); }

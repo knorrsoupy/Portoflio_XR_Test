@@ -14,6 +14,7 @@
   box-shadow: 0 0 0 var(--jet);
   display: flex;
   transition: var(--transition-1);
+
 }
 
 .card-md:is(:hover, :focus-within) { box-shadow: 5px 5px 0 var(--jet); }
@@ -25,7 +26,7 @@
 .card,
 .card-media { border: 2px solid var(--jet); }
 
-.card-lg { padding: 25px; }
+.card-lg { padding: 25px 25px; }
 
 .card-md { padding: 30px; }
 
@@ -63,6 +64,7 @@
   display: grid;
   place-items: center;
   flex-shrink: 0;
+  align-items: center;
 }
 
 
