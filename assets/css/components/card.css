@@ -41,6 +41,7 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 20px;
+  background-color: hsl(0, 0%, 86%);
 }
 
 .card-lg .card-media {

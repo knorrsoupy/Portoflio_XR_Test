@@ -47,7 +47,7 @@
 
 .header { background-color: transparent; }
 
-.header.active { background-color: var(--white); }
+.header.active { background-color: var(--navbar-color); }
 
 
 
@@ -102,7 +102,8 @@
 
 .project-banner{
   background-color: var(--jet);
-  padding-block: 50px;
+  padding-block: 20px;
+  /* padding-block: 50px; */
 }
 
 
@@ -128,7 +129,7 @@
 .skill .card .card-title {
   color: var(--jet);
   font-size: 1.6rem;
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
 }
 
 .project-card{
@@ -146,9 +147,9 @@
 }
 .card-text{
   color: var(--jet);
-  font-size: 1.6rem;
-  font-weight: var(--fw-500);
-  margin-block: 20px;
+  font-size: 1.4rem;
+  font-weight: var(--fw-300);
+  margin-block: 10px;
 }
 
 /*-----------------------------------*\
