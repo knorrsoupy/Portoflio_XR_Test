@@ -29,6 +29,14 @@
 
 
 
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.header { background-color: transparent; }
+
+.header.active { background-color: var(--navbar-color); }
+
 
 
 /*-----------------------------------*\
@@ -36,7 +44,6 @@
 \*-----------------------------------*/
 
 .contact {
-  background-color: var(--jet);
   padding-block-start: calc(var(--section-padding) + 60px);
 }
 
@@ -91,7 +98,7 @@ textarea {
 .contact-list .item-icon ion-icon { font-size: 2.5rem; }
 
 .contact .label-lg {
-  color: var(--white_a80);
+  color: var(--grey-500);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-400);
@@ -99,8 +106,9 @@ textarea {
 }
 
 .contact .body-lg {
-  color: var(--white);
+  color: var(--grey-500);
   word-break: break-all;
+  font-size: 1.5rem;
 }
 
 
