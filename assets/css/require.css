@@ -218,7 +218,7 @@ body.loaded { overflow: visible; }
 .title-md,
 .title-sm,
 .label-lg {
-  color: var(--medium-grey); 
+  color: var(--black); 
   font-weight: var(--fw-600);
   line-height: 1.2;
 }

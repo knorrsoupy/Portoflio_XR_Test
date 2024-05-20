@@ -18,8 +18,20 @@
  */
 
 
+:root{
+  --color-grey : hsl(0, 0%, 44%);
+}
 
+.headline{
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--jet);
+  margin-block: 0;
+  padding-bottom: 40px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 
+}
 
 /*-----------------------------------*\
   #COMPONENTS
@@ -55,12 +67,12 @@
 .portfolio-card .card-banner {
   position: relative;
   border: 2px solid var(--jet);
-  box-shadow: 0 0 0 var(--jet);
+  box-shadow: 0 0 0 var(--color-grey);
   transition: var(--transition-1);
 }
 
 .portfolio-card .card-banner:is(:hover, :focus-within) {
-  box-shadow: 3px 3px 0 var(--jet);
+  box-shadow: 3px 3px 0  var(--color-grey);
 }
 
 .portfolio-card .btn-icon {
@@ -83,14 +95,14 @@
 }
 
 .portfolio-card .chip {
-  background-color: var(--orange-red_a20);
+  background-color: black;
   max-width: max-content;
-  color: var(--jet);
+  color: var(--white);
   font-weight: var(--fw-500);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   padding: 6px 20px;
-  border-radius: var(--radius-pill);
+  border-radius: 0.3rem;
   margin-block-end: 18px;
 }
 
@@ -115,7 +127,7 @@
     align-items: center;
   }
 
-  .portfolio-list > li:nth-child(2n) .card-banner { order: 1; }
+  .portfolio-list > li:nth-child(2n) .card-banner { order: 0; }
 
   .portfolio-card > * {
     width: 100%;

@@ -30,6 +30,14 @@
 @import url('../components/btn.css');
 
 
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.header { background-color: transparent; }
+
+.header.active { background-color: var(--navbar-color); }
+
 
 
 
@@ -51,7 +59,16 @@
 .card .body-sm { color: var(--jet); }
 
 
+.headline{
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--jet);
+  margin-block: 0;
+  padding-bottom: 40px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 
+}
 
 
 /*-----------------------------------*\
