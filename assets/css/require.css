@@ -231,8 +231,8 @@ body.loaded { overflow: visible; }
   color: var(--section-heading);
   display: flex;
   justify-content: left;
+  word-break: break-all;
 }
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -245,7 +245,7 @@ body.loaded { overflow: visible; }
 .w-100 { width: 100%; }
 
 .section-title {
- margin-block-end: 30px;
+  /* margin-block-end: 30px; */
   text-transform: uppercase;
   letter-spacing: 3px;
 }
