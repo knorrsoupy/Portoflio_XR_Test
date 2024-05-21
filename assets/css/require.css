@@ -232,6 +232,7 @@ body.loaded { overflow: visible; }
   display: flex;
   justify-content: left;
   word-break: break-all;
+
 }
 
 /*-----------------------------------*\
@@ -380,7 +381,7 @@ body.loaded { overflow: visible; }
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus-visible, .active) { color: var(--black); }
+.navbar-link:is(:hover, :focus-visible, .active) { color:var(--medium-grey); }
 
 
 

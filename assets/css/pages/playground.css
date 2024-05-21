@@ -1,0 +1,143 @@
+/*-----------------------------------*\
+  #service.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+ 
+/**
+ * TABLE OF CONTENT
+ *
+ * COMPONENTS
+ * Btn............................Buttons style
+ *
+ * MAIN CONTENT
+ * Portfolio......................Portfolio style
+ * Media queries..................Responsive for all devices
+ */
+
+
+:root{
+  --color-grey : hsl(0, 0%, 44%);
+}
+
+.headline{
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--jet);
+  margin-block: 0;
+  padding-bottom: 40px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+
+}
+
+/*-----------------------------------*\
+  #COMPONENTS
+\*-----------------------------------*/
+
+@import url('../components/btn.css');
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.header { background-color: transparent; }
+
+.header.active { background-color: var(--navbar-color); }
+
+
+
+/*-----------------------------------*\
+  #PORTFOLIO
+\*-----------------------------------*/
+
+.portfolio {
+  padding-block-start: calc(var(--section-padding) + 60px);
+}
+
+.portfolio-list,
+.portfolio-card { 
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+ }
+
+.portfolio-list { gap: 50px; }
+
+.portfolio-card { gap: 50px; }
+
+.portfolio-card .card-banner {
+  position: relative;
+  border: 2px solid var(--jet);
+  box-shadow: 0 0 0 var(--color-grey);
+  transition: var(--transition-1);
+}
+
+.portfolio-card .card-banner:is(:hover, :focus-within) {
+  box-shadow: 3px 3px 0  var(--color-grey);
+}
+
+.portfolio-card .btn-icon {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background-color: var(--white);
+  color: var(--jet);
+  font-size: 2rem;
+  padding: 8px;
+  border: 2px solid var(--jet);
+  opacity: 0;
+  transition: var(--transition-1);
+  will-change: transform;
+}
+
+.portfolio-card .card-banner:is(:hover, :focus-within) .btn-icon {
+  transform: translateX(15px);
+  opacity: 1;
+}
+
+.portfolio-card .chip {
+  background-color: black;
+  max-width: max-content;
+  color: var(--white);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 6px 20px;
+  border-radius: 0.3rem;
+  margin-block-end: 18px;
+}
+
+.portfolio-card .card-text { margin-block: 10px 25px; }
+
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+  .portfolio-card {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .portfolio-list > li:nth-child(2n) .card-banner { order: 1; }
+
+  .portfolio-card > * {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .portfolio-card .card-text { margin-block-start: 20px; }
+
+}
