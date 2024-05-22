@@ -130,6 +130,7 @@
 .skill .card .card-title {
   color: var(--jet);
   font-size: 1.6rem;
+  height: 50px;
   font-weight: var(--fw-600);
 }
 
