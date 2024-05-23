@@ -89,7 +89,7 @@ width: 100%;
   border: none;
   padding: 20px;
   width: 300px;
-  border: 2px dashed rgb(201, 201, 201);
+  /* border: 2px dashed rgb(201, 201, 201); */
   gap: 30px;
 }
 
