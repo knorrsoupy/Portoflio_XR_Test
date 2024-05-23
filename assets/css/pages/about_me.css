@@ -40,18 +40,25 @@
 
 
 
-
 /*-----------------------------------*\
   #SERVICES
 \*-----------------------------------*/
 
 .service { padding-block-start: calc(var(--section-padding) + 20px); }
 
+
+
 .service-list {
   display: flex;
   flex-direction: column;
+width: 100%;
+  justify-self: center;
   gap: 10px;
 }
+
+/*-----------------------------------*\
+  #card
+\*-----------------------------------*/
 
 .card-divider{
   border-right: 3px dashed rgb(148, 148, 148);
@@ -62,6 +69,7 @@
   display: flex;
   justify-content: center;
 }
+
 
 .card-title {
    margin-block-end: 5px; 
@@ -77,12 +85,23 @@
 }
 
 .card { 
+
   border: none;
   padding: 20px;
-  width: 350px;
-  color: var(--light-jet); 
+  width: 300px;
+  border: 2px dashed rgb(201, 201, 201);
   gap: 30px;
 }
+
+/*-----------------------------------*\
+  #container
+\*-----------------------------------*/
+
+.container {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+ gap: 20px;
+} 
 
 
 .headline{
