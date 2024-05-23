@@ -177,6 +177,30 @@
   font-weight: var(--fw-500);
 }
 
+.chip-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left ;
+  gap: 10px;
+  padding-block: 10px ;
+}
+
+.chip{
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--jet);
+  color: var(--white);
+  border-radius: 2px;
+  letter-spacing: 0.4rem;
+  font-size: 1rem;
+  font-weight: var(--fw-500);
+
+}
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -235,7 +259,16 @@
 }
 
 
-
+@media screen and (max-width: 768px){
+  .chip-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-block: 10px ;
+  }
+}
 
 
 /**
@@ -254,6 +287,7 @@
 
   }
 
+
   /**
    * HERO
    */
@@ -271,4 +305,14 @@
 
   .skill .container { align-items: flex-start; }
 
+}
+@media screen and (max-width: 992px){
+ .chip-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-block: 10px ;
+ }
 }

@@ -3,7 +3,7 @@
     display: flex ;
     justify-content: center;
     width: 100%;
-    padding: 50px;
+    padding: 30px;
 }
 
 .heading-title{
@@ -57,7 +57,9 @@ li{
 .image-container img{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 20px;
     
 }
+
