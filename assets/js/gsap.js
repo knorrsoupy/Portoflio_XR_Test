@@ -1,7 +1,12 @@
 
  // use a script tag or an external JS file
 document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollTrigger,EaselPlugin);
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+
+    // Scroll Smoother
+    
+
   // gsap code here!
     gsap.from('.hero-content', {
         duration: 1,
@@ -52,7 +57,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
    
 
+   //smooth scroll
+
+
 });
-
-
-
