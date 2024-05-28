@@ -455,7 +455,7 @@ body.loaded { overflow: visible; }
 
   .section { --section-padding: 100px; }
 
-  .section-title { margin-block-end: 40px; }
+  /* .section-title { margin-block-end: 40px; } */
 
 
 
@@ -501,7 +501,7 @@ body.loaded { overflow: visible; }
    * REUSED STYLE
    */
 
-  .section-title { margin-block-end: 60px; }
+  /* .section-title { margin-block-end: 60px; } */
 
 
 
