@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
    });
     
    gsap.from('.portfolio-card', {
-    duration: 1.5,
+    duration: 1,
         y: 100,
         opacity: 0,
         ease: 'power4.out',
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
    });
 
    gsap.from('.project-banner', {
-    duration: 1.5,
+    duration: 1,
         y: 100,
         opacity: 0,
         ease: 'power4.out',
