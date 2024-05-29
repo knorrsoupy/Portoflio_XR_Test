@@ -104,9 +104,15 @@
   background-color: var(--jet);
   display: flex;
   padding-block: 20px;
+  z-index: 4;
   /* padding-block: 50px; */
 }
 
+/* project banner sticky */
+.pin{
+  position: sticky;
+  top:0;
+}
 
 
 /*-----------------------------------*\

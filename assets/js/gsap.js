@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 
-    // Scroll Smoother
-
 
   // gsap code here!
     gsap.from('.hero-content', {
@@ -54,8 +52,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
             start: 'top 80%',
         }
    });
-
-   
 
    //smooth scroll
 
