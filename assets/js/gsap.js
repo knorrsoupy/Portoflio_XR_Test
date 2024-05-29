@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // gsap code here!
     gsap.from('.hero-content', {
-        duration: 1,
+        duration: 2,
         y: -100,
         opacity: 0,
         ease: 'power4.out',
