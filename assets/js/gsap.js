@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
     // Scroll Smoother
-    
+
 
   // gsap code here!
     gsap.from('.hero-content', {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
    gsap.from('.card', {
-        duration: 1,
+        duration: 1.5,
         y: 100,
         opacity: 0,
         ease: 'power4.out',
