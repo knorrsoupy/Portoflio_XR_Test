@@ -42,16 +42,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
    });
 
-   gsap.from('.project-banner', {
-    duration: 1,
-        y: 100,
-        opacity: 0,
-        ease: 'power4.out',
-        scrollTrigger: {
-            trigger: '.card',
-            start: 'top 80%',
-        }
-   });
 
    //smooth scroll
 
