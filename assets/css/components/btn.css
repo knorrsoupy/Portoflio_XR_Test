@@ -6,13 +6,10 @@
  * copyright 2022 codewithsadee
  */
 
-
-
-
-
 .btn {
   background-color: var(--button);
   font-size: var(--fs-14);
+  flex: 1 1 auto;
   font-weight: var(--fw-500);
   text-transform: uppercase;
   max-width: max-content;
@@ -21,6 +18,7 @@
   /* box-shadow: 2px 0px 0 -1px var(--shadow-color, var(--black)); */
   transition: var(--transition-1);
 }
+
 
 .btn:is(:hover, :focus-visible) {
   background-color: var(--black, var(--jet));
