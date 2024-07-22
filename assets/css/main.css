@@ -319,7 +319,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 3em;
+    gap: 2em;
     padding-block: 30px ;
  }
 }
