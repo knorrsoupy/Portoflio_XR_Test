@@ -189,7 +189,7 @@
   flex-direction: row;
   justify-content: left ;
   gap: 10px;
-  padding-block: 10px ;
+  padding-block: 30px ;
 }
 
 .chip{
@@ -272,7 +272,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    padding-block: 10px ;
+    padding-block: 30px ;
   }
 }
 
@@ -315,10 +315,11 @@
 @media screen and (max-width: 992px){
  .chip-container{
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
-    padding-block: 10px ;
+    gap: 3em;
+    padding-block: 30px ;
  }
 }

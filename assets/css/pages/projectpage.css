@@ -33,7 +33,7 @@ h3,h1{
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.4px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-block: 10px;
 }
 li{
@@ -63,3 +63,6 @@ li{
     
 }
 
+h6{
+    font-size: 1em;
+}

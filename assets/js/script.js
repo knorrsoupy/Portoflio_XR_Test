@@ -54,8 +54,3 @@ const activeHeader = function () {
 }
 
 window.addEventListener("scroll", activeHeader);
-
-
-/**
- * Smooth Scroll
- */
