@@ -159,7 +159,7 @@ address { font-style: normal; }
 
 /* change the typeface here */
 html {
-  font-family: var(--ff-jetbrains);  
+  font-family: var(--ff-roboto) !important;  
   font-size: 10px;
   scroll-behavior: smooth;
 }
