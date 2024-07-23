@@ -59,6 +59,7 @@
    
    /* font-family */
   --ff-roboto: 'Roboto Mono', monospace;
+  --ff-ibmplex: 'IBM Plex Mono', monospace;
   
   --fs-45: 4.5rem;
   --fs-38: 3.8rem;
@@ -157,7 +158,7 @@ address { font-style: normal; }
 
 /* change the typeface here */
 html {
-  font-family: var(--ff-roboto);  
+  font-family: var(--ff-ibmplex);  
   font-size: 10px;
   scroll-behavior: smooth;
 }
