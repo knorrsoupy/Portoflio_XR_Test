@@ -1,11 +1,11 @@
 
- // use a script tag or an external JS file
+// use a script tag or an external JS file
 document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 
 
-  // gsap code here!
+    // gsap code here!
     gsap.from('.hero-content', {
         duration: 2,
         y: -100,
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: 'power4.out',
     });
 
-   gsap.from('.card', {
+    gsap.from('.card', {
         duration: 1.5,
         y: 100,
         opacity: 0,
@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: '.card',
             start: 'top 80%',
         }
-   });
-    
-   gsap.from('.portfolio-card', {
-    duration: 1,
+    });
+
+    gsap.from('.portfolio-card', {
+        duration: 1,
         y: 100,
         opacity: 0,
         ease: 'power4.out',
@@ -40,10 +40,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: '.card',
             start: 'top 80%',
         }
-   });
+    });
+
+    gsap.from('.container', {
+        duration: 1,
+        y: -100,
+        opacity: 0,
+        ease: 'power4.out',
+    });
+
+    gsap.from('.section', {
+        duration: 1,
+        y: -100,
+        opacity: 0,
+        ease: 'power4.out',
+    });
 
 
-   //smooth scroll
+    //smooth scroll
 
 
 });

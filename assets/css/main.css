@@ -65,19 +65,6 @@
   overflow: hidden;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 10%;
-  bottom: 70%;
-  right: -75%;
-  background-color: var(--maximum-yellow-red_a40);
-  transform: rotate(-45deg);
-  border-radius: var(--radius-50);
-  z-index: -1;
-}
-
 .hero .container {
   display: grid;
   gap: 70px;
