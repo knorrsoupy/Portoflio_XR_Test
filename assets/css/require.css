@@ -25,9 +25,6 @@
 \*-----------------------------------*/
 
 
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -59,9 +56,10 @@
   /**
    * typography
    */
-
-  --ff-jost: 'Jost', sans-serif;
-  --ff-raleway: 'Raleway', sans-serif;
+   
+   /* font-family */
+  --ff-roboto: 'Roboto Mono', monospace;
+  
   --fs-45: 4.5rem;
   --fs-38: 3.8rem;
   --fs-32: 3.2rem;
@@ -157,8 +155,9 @@ ion-icon { pointer-events: none; }
 
 address { font-style: normal; }
 
+/* change the typeface here */
 html {
-  font-family: var(--ff-raleway);
+  font-family: var(--ff-roboto);  
   font-size: 10px;
   scroll-behavior: smooth;
 }
@@ -258,7 +257,10 @@ body.loaded { overflow: visible; }
   letter-spacing: 3px;
 }
 
-.text-center { text-align: center;}
+.text-center { 
+  text-align: center;
+  font-size: 15px !important;
+}
 
 .img-cover {
   width: 100%;
