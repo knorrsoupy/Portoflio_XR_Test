@@ -311,5 +311,8 @@
     gap: 2em;
     padding-block: 30px ;
  }
+ .body-sm{
+    font-size: 1.4rem;
+ }
 }
 
