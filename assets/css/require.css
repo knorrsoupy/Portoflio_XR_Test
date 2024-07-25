@@ -259,9 +259,22 @@ body.loaded { overflow: visible; }
   letter-spacing: 3px;
 }
 
+/**
+ * grid
+ */
+.grid{
+  padding-top: 50px;
+  display: grid;
+  background-image:
+  linear-gradient(to right, #e3e3e3 1px, transparent 1px),
+  linear-gradient(to bottom, #e3e3e3 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
 .text-center { 
   text-align: center;
   font-size: 15px !important;
+  
 }
 
 .img-cover {
@@ -371,6 +384,7 @@ body.loaded { overflow: visible; }
   visibility: visible;
   transition-duration: 0.5s;
   transition-delay: 0s;
+  margin-top:10px;
 }
 
 .navbar > * {

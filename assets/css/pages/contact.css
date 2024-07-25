@@ -35,7 +35,10 @@
 
 .header { background-color: transparent; }
 
-.header.active { background-color: var(--navbar-color); }
+.header.active { 
+  background-color: var(--navbar-color);
+}
+
 
 
 
