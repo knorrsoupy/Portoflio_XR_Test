@@ -70,7 +70,8 @@
   margin-block-end: 20px;
 }
 
-.hero-text { margin-block: 25px; }
+.hero-text { padding-top:15px;
+padding-bottom: 15px; }
 
 .hero .btn { margin-inline: auto; }
 
@@ -168,7 +169,7 @@
   flex-direction: row;
   justify-content: left ;
   gap: 10px;
-  padding-block: 30px ;
+  padding-block: 20px ;
 }
 
 .chip{
