@@ -318,3 +318,29 @@
   font-size: 5px;
   font-weight: 500;
 }
+
+@media (max-width: 600px) {
+  .tag {
+    font-weight: 600; /* Adjust the font weight for mobile */
+  }
+
+  .hov {
+    font-weight: 600; /* Adjust the font weight for mobile */
+  }
+
+  .headline {
+    font-weight: 600; /* Adjust the font weight for mobile */
+  }
+
+  .hero-subtitle {
+    font-weight: 600; /* Adjust the font weight for mobile */
+  }
+
+  .hero-text {
+    font-weight: 600; /* Adjust the font weight for mobile */
+  }
+
+  p {
+    font-weight: 600; /* Adjust the font weight for mobile */
+  }
+}
