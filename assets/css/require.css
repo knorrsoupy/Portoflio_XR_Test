@@ -3,10 +3,6 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
- */
-
-/**
  * TABLE OF CONTENT
  *
  * Custom properties..............Global variables
@@ -34,13 +30,7 @@
   /**
    * colors
    */
-
-  --maximum-yellow-red_a10: hsla(41, 99%, 64%, 0.1);
-  --maximum-yellow-red_a40: hsla(41, 99%, 64%, 0.4);
-  --maximum-yellow-red: hsl(41, 99%, 64%);
-  --orange-red_a20: hsla(19, 100%, 55%, 0.2);
   --eerie-black: hsl(0, 0%, 31%);
-  --orange-red: hsl(19, 100%, 55%);
   --davys-gray: hsl(0, 0%, 92%);
   --white_a80: hsla(0, 0%, 100%, 0.8);
   --white_a75: hsla(0, 0%, 69%, 0.75);

@@ -41,7 +41,6 @@ Ionicon
 ## Typography
 
 ``` css
---ff-jost: 'Jost', sans-serif;
 
 --fs-45: 4.5rem;
 --fs-38: 3.8rem;
