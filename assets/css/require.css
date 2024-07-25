@@ -468,7 +468,8 @@ body.loaded { overflow: visible; }
    * REUSED STYLE
    */
 
-  .section { --section-padding: 100px; }
+  .section { --section-padding: 100px; 
+  padding-top: 80px;}
 
   /* .section-title { margin-block-end: 40px; } */
 
