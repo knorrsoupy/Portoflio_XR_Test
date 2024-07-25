@@ -84,7 +84,6 @@
 }
 
 .portfolio-card .chip {
-  background-color: black;
   max-width: max-content;
   color: var(--white);
   font-weight: var(--fw-500);

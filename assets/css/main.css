@@ -82,7 +82,7 @@
 .project-banner{
   background-color: var(--jet);
   display: flex;
-  padding-block: 20px;
+  padding-block: 40px;
   z-index: 3;
   /* padding-block: 50px; */
 }
@@ -308,3 +308,13 @@
  }
 }
 
+/*
+*SIGNATURE
+*/
+.signature{
+  display:flex;  
+  justify-content: center;
+  gap: 10px;
+  font-size: 5px;
+  font-weight: 500;
+}

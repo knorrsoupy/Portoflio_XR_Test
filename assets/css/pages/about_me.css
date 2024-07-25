@@ -166,7 +166,12 @@
 .about
 {
   padding-top: 50px;
-  font-size: 2rem;
+}
+
+.hov{
+  padding: 3px 10px;
+  color:#ececec ;
+  background-color: var(--jet);
 }
 
 /*-----------------------------------*\
