@@ -55,7 +55,8 @@ li{
 
 .image-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
 
 }
 .image-container img{
@@ -63,10 +64,16 @@ li{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     
 }
 
 h6{
     font-size: 1em;
+}
+
+.container .flow-container li{
+    padding-block: 5px;
+    list-style-type:square;
+    margin-left: 1.2em;
 }
