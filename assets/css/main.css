@@ -319,3 +319,14 @@ padding-bottom: 15px; }
   font-size: 5px;
   font-weight: 500;
 }
+
+/*-----------------------------------*\
+  #btn
+\*-----------------------------------*/
+
+.btn-group{
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+
