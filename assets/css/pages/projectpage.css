@@ -77,3 +77,12 @@ h6{
     list-style-type:square;
     margin-left: 1.2em;
 }
+
+.responsive-video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+}
+  
