@@ -84,12 +84,12 @@
 }
 
 .portfolio-card .chip {
-  max-width: max-content;
+  max-width: max-content + 10px;
   color: var(--white);
   font-weight: var(--fw-500);
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 6px 20px;
+  padding: 6px 10px;
   border-radius: 0.3rem;
   margin-block-end: 18px;
 }
