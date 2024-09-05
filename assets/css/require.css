@@ -46,12 +46,12 @@
   /**
    * typography
    */
-
    /* font-family */
   --ff-roboto: 'Roboto Mono', monospace;
   --ff-ibmplex: 'IBM Plex Mono', monospace;
   --ff-jetbrains: 'JetBrains Mono', monospace;
-  
+  --ff-consolas: 'Consolas', monospace;
+
   --fs-45: 4.5rem;
   --fs-38: 3.8rem;
   --fs-32: 3.2rem;
@@ -158,7 +158,7 @@ body {
   background-color: var(--davys-gray);
   color: var(--eerie-black);
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.48;
   overflow: hidden;
   cursor: url('../Pointer/Pointer_Ellipse.png'), auto;
 
@@ -241,7 +241,10 @@ body.loaded { overflow: visible; }
 
 .section { padding-block: var(--section-padding); }
 
-.w-100 { width: 100%; }
+.w-100 { width: 100%; 
+border: 2px solid rgb(129, 129, 129);
+}
+
 
 .section-title {
   /* margin-block-end: 30px; */
@@ -289,7 +292,7 @@ body.loaded { overflow: visible; }
 
 u{
   text-decoration-color: var(--jet);
-  text-underline-offset: 0.4em ;
+  text-underline-offset: 0.3em ;
   text-decoration-thickness: 0.1em;
 }
 

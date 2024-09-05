@@ -54,3 +54,22 @@ const activeHeader = function () {
 }
 
 window.addEventListener("scroll", activeHeader);
+
+
+
+/**
+ * navbar change icon
+ */
+
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.querySelector('.nav-toggle-btn');
+  const icon = toggleButton.querySelector('ion-icon');
+
+  toggleButton.addEventListener('click', function() {
+    if (icon.getAttribute('name') === 'menu') {
+      icon.setAttribute('name', 'close');
+    } else {
+      icon.setAttribute('name', 'menu');
+    }
+  });
+});

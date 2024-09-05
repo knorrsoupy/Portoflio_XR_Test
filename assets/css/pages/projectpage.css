@@ -2,7 +2,6 @@
 * PROJECT PAGE CSS
 */
 
-
 .banner-image img{
     display: flex ;
     justify-content: center;
@@ -26,7 +25,7 @@
 h3,h1{
     color: var(--jet);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding-block: 15px;
     text-decoration: underline;
     text-decoration-thickness:5px;
@@ -56,6 +55,7 @@ li{
 .image-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     
 
 }
@@ -64,8 +64,6 @@ li{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px;
-    
 }
 
 h6{
@@ -83,6 +81,169 @@ h6{
     margin: 0 auto;
     max-width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 30px;
 }
+  
+
+
+/* RESET & BASIC STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  /* TABLE STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+    --black: #000;
+    --tablecolorbg: #d4d4d4;
+    --tablecolorbg2 : #d1d1d1;
+  }
+
+  table {
+    margin: 50px 0 20px;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  
+  table th {
+    color: black;
+    padding: 20px;
+  }
+  
+  table td {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  table td:first-child {
+    position: relative;
+    padding-right: 60px;
+  }
+  
+  table td:first-child::before {
+    display: none;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--black);
+  }
+  
+  table td:nth-child(2) {
+    position: relative;
+  }
+  
+  table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    counter-increment: counter;
+    background-color: rgb(228, 228, 228);
+  }
+  
+  table tbody tr::before {
+    content: counter(counter);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center; 
+    border-radius: 50%;
+    font-weight: bold;
+    color: var(--tablecolorbg);
+    background: var(--black);
+    z-index: 1;
+  }
+  
+  table tbody tr:nth-of-type(even) > * {
+    background: var(--tablecolorbg2);
+  }
+  
+  table img {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 45%;
+    max-width: 150px;
+    z-index: 1;
+  }
+  
+  .table-credits {
+    font-size: 12px;
+  }
+  
+  /* MQ STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media (max-width: 999px) {
+    .visible\@l {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    table td {
+      padding: 20px;
+    }
+  }
+  
+  @media (min-width: 700px) and (max-width: 999px) {
+    table tbody {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    table tbody tr {
+      width: 50%;
+    }
+  
+    table tbody tr:nth-of-type(even) > * {
+      background: transparent;
+    }
+  
+    table tbody tr:nth-of-type(4n) > *,
+    table tbody tr:nth-of-type(4n + 1) > * {
+      background: var(--tablecolorbg2);
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .hidden\@l {
+      display: none;
+    }
+  
+    .container {
+      padding: 0 30px;
+    }
+  
+    table {
+      border: none;
+    }
+  
+    table th,
+    table td {
+      width: 25%;
+    }
+  
+    table td:first-child {
+      padding-right: 0;
+    }
+  
+    table tbody tr {
+      display: table-row;
+    }
+  
+    table tbody tr::before {
+      display: none;
+    }
+  }
+  
+  
+  @media (min-width: 1250px) {
+    table td:first-child::before {
+      right: calc(100% + 20px);
+    }
+  }
   

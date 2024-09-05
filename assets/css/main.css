@@ -174,16 +174,16 @@ padding-bottom: 15px; }
 
 .chip{
   display: flex;
-  width: 200px;
+  width: max-content ;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 10px;
+  gap: 20px;
+  padding: 10px 20px;  
   background-color: var(--jet);
   color: var(--white);
   border-radius: 2px;
   letter-spacing: 0.4rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: var(--fw-500);
 
 }

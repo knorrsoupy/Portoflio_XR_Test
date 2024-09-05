@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Soup | Portfolio</title>
+  <meta name="title" content="Souparna Roy . XR Designer . UX Designer . Digital Artist">
+  <meta name="description" content="This is a personal portfolio html template made by souparna">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon_souparna.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/require.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/pages/projectpage.css">
+
+  <!---
+  GSAP Link
+  --->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-circle"></div>
+  </div>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo_soup_ver2.svg" width="32" height="32" alt="Soup home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="label-lg navbar-link has-after"><b>Home</b></a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./portfolio.html" class="label-lg navbar-link has-after active"><b>Portfolio</b></a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./playground.html" class="label-lg navbar-link has-after"><b>Playground</b></a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./about_me.html" class="label-lg navbar-link has-after"><b>About_me</b></a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <a href="./contact.html" class="btn btn-tertiary">Lets Talk</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <section class="grid section"> <!--PROJECTS-->
+        <div class="container">
+
+          <h2 class="hero-subtitle" style="padding-block: 20px;">MOON BASE: A SPACE SHOOTER VR EXPERIENCEe</h2>
+          <h6 style="text-transform: uppercase;">Duration : two weeks</h6>
+
+          <p class="heading-title"> The primary objective of this game is to give user an experience of a First Person View of the space and shooting as many asteroids as possible in the given frame time possible. 
+          </p>
+
+
+          <div class="banner-image">
+            <img src="work/Project/Moonbase/Moonbase_Banner.png" alt="moonbase_vr">
+          </div>
+
+          <!--SECTION-->
+          
+          <h3>Key Highlights</h3> 
+          <p class="paragraph">
+            Immersive Gameplay -- Science Fiction -- Intuitive -- Replayability <br>
+            Motion Controls -- Realistic Interactions -- First Person View -- Space Shooter <br>
+          </p>
+          <br>
+          <!--SECTION-->
+          <h3>Storyboarding</h3>
+          <div class="banner-image">
+            <img src="work/Project/Moonbase/Storyboarding.png" alt="moonbase_vr">
+          </div>
+
+          <!--SECTION-->
+          <h3>Target Audience</h3>
+          <p class="paragraph">
+           The target audience are probably the people who are interested in FPS games. People who are interested in VR games and want to experience the space in a different way with a fast-paced shooting game.
+          </p>
+          <p class="keyword">AGE RANGE : 15-25</p>
+          <p class="keyword">GAME GENRE : Casual, FPS, Shooting</p>
+          <p class="paragraph">
+            For better Hand-eye coordination <br>
+            Casual Gamers <br>
+            Shooting and Strategic decision-making <br>
+            Reflexes and reaction time       
+          </p>
+          <br>
+          <!--SECTION-->
+          <h3>REQUIREMENT GATHERING ACTIVITY</h3>
+          <section class="flow-container">
+            <table>
+              <thead class="visible@l">
+                <tr>
+                  <th>SCENE</th>
+                  <th>3D ASSETS</th>
+                  <th>FUNCTIONAL NEEDS</th>
+                  <th>I/P INTERACTIONS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong class="hidden@l">SCENE:</strong> Mayank is entering the moon surface, after wearing the VR Headset. He is transported to a base on the surface of the moon.</td>
+                  <td>
+                    <strong class="hidden@l">3D ASSETS:</strong> Moon Surface, Podium Asset, Planets, Instruction Canvas.
+                  </td>
+                  <td><strong class="hidden@l">FUNCTIONAL NEEDS:</strong> Instructions and Guidelines.</td>
+                  <td>
+                    <strong class="hidden@l">I/P INTERACTIONS:</strong> N/A.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong class="hidden@l">SCENE:</strong> Suddenly, a swarm of asteroids comes into view, hurtling towards you at high speed.</td>
+                  <td>
+                    <strong class="hidden@l">3D ASSETS:</strong> 3D Asset of the asteroids, moon base assets.
+                  </td>
+                  <td><strong class="hidden@l">FUNCTIONAL NEEDS:</strong> Instructions and Guidelines</td>
+                  <td>
+                    <strong class="hidden@l">I/P INTERACTIONS:</strong> N/A.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong class="hidden@l">SCENE:</strong> Mayank reacts quickly, using weapons to defend against the incoming threat.</td>
+                  <td>
+                    <strong class="hidden@l">3D ASSETS:</strong> 3D Asset of the asteroids, moon base assets, Gun Assets.
+                  </td>
+                  <td><strong class="hidden@l">FUNCTIONAL NEEDS:</strong> Shooting the asteroids, Asteroid Speed, Timer, Soundtracks.</td>
+                  <td>
+                    <strong class="hidden@l">I/P INTERACTIONS:</strong> Grip Button to hold the guns, Trigger to shoot the guns, and also to control the game system.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong class="hidden@l">SCENE:</strong> Mayank engages in intense space combat, firing lasers and missiles at the oncoming asteroids.</td>
+                  <td>
+                    <strong class="hidden@l">3D ASSETS:</strong> Guns, Sparks from the gun animation, Asteroids, Instruction Canvas.
+                  <td>
+                    <strong class="hidden@l">FUNCTIONAL NEEDS:</strong> Soundtrack, Scoreboard, Highest Score.</td>
+                  <td>
+                    <strong class="hidden@l">I/P INTERACTIONS:</strong> Grip Button to hold the guns, Trigger to shoot the guns, and also to control the game system.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong class="hidden@l">SCENE:</strong> Explosions light up the darkness of space as the protagonist maneuvers deftly to avoid collisions.</td>
+                  <td>
+                    <strong class="hidden@l">3D ASSETS:</strong> 3D Asset of the asteroids, Asteroid Destruction Asset.
+                  </td>
+                  <td><strong class="hidden@l">FUNCTIONAL NEEDS:</strong> Animation when the asteroid is destroyed.</td>
+                  <td>
+                    <strong class="hidden@l">I/P INTERACTIONS:</strong> Haptic Feedback when the laser is fired from the gun.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <br>
+          <!--SECTION-->
+          <h3>process review</h3>
+          <div class="flow-container">
+            <div class="flow-content">
+              <p class="paragraph">
+
+              <p class="keyword">Installation of XR Interaction Toolkit:</p>
+              We installed XR Interaction Toolkit in Unity to enable VR Interactions.
+
+              <p class="keyword">Configuration of VR Settings:</p>
+              We configured necessary settings in Unity for VR experiences.
+
+              <p class="keyword">Asset Selection from Storyboard:</p>
+              Assets from the storyboard were selected upon and chosen further for the game.
+
+              <p class="keyword">Terrain Creation:</p>
+              Using Unity’s Terrain System, the moon environment was created.
+
+              <p class="keyword">Asset Acquisition and Modification:</p>
+              Obtain tree and grass samples from Unity Asset Store and modify them according to project needs.
+
+              <p class="keyword">Game Script Creation</p>
+              Game script was developed to facilitate interactions and gameplay mechanics.
+              </p>
+            </div>
+
+            <div class="flow-content">
+              <p class="paragraph">
+
+              <p class="keyword">First Prototype Implementation:</p>
+              <ul>
+                <li>Implement basic gameplay elements:</li>
+                <li>Implement grabbing functionality.</li>
+                <li>Spawn asteroids within the environment.</li>
+                <li>Integrate scoring system and timer.</li>
+                <li>Develop a game controller with three states. (Start, Waiting and Over)</li>
+              </ul>
+
+              <p class="keyword">Second Prototype Implementation:</p>
+              <ul>
+                <li>Game Play mechanics and features were further improved.</li>
+                <li>Improve physics of the firefly for more realistic behavior.</li>
+                <li>Implement haptic feedback for enhanced user experience.</li>
+                <li>Utilize fog as a diegetic representation for the timer.</li>
+                <li> Enhance lighting within the environment.</li>
+                <li>Add post-processing effects to improve visuals and atmosphere.</li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <!--SECTION-->
+          <h3>3D MODELS AND PREFABS</h3>
+          <p class="paragraph">         
+            <ul>
+             
+            <br>
+              <div class="container">
+                <div class="image-container">
+                  <div class="image-png">
+                    <img src="work/Project/Moonbase/Moonbase 1.png" alt="process picture 1">
+                  </div>
+                  <div class="image-png">
+                    <img src="work/Project/Moonbase/Asteroid.png" alt="process picture 2">
+                  </div>
+                  <div class="image-png">
+                    <img src="work/Project/Moonbase/Picture 1.png" alt="process picture 3">
+                  </div>
+                  <div class="image-png">
+                    <img src="work/Project/Moonbase/Terminal.png" alt="process picture 4">
+                  </div>
+                  <div class="image-png">
+                    <img src="work/Project/Moonbase/Start Point 1.png" alt="process picture 5">
+                  </div>                
+                </div>
+              </div>
+            </ul>
+          </p>
+          <br>
+          <!--SECTION-->
+          <h3>GAMEPLAY VIDEO</h3>
+            <p class="paragraph">    
+              <video controls class="responsive-video">
+               <source src="work/Project/Moonbase/Moonbase_VR.mp4" type="video/mp4" autoplay>
+              </video>   
+            </p>
+            <br>
+
+      </section> <!-- #PROJECTS -->
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+          <a href="./portfolio.html" class="btn btn-tertiary">MORE PROJECTS -></a>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.instagram.com/knorrsoupy/" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/souparna-r-012a55175" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.behance.net/knorrsoupy" class="social-link">
+            <ion-icon name="logo-behance"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center signature">Made by Souparna Roy with
+        <img src="assets/images/Love.svg" alt="love_png">
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/gsap.js"></script>
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
