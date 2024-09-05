@@ -407,11 +407,17 @@ u{
   letter-spacing: 3px;
   padding: 16px 15px;
   transition: var(--transition-1);
+  background-color: transparent; /*change the color of the navbar*/
 }
 
-.navbar-link:is(:hover, :focus-visible, .active) { color:var(--medium-grey); }
+.navbar-link:is(:hover, :focus-visible, .active) { 
+  color:var(--medium-grey); 
+  background-color: transparent; /*change the color of the navbar*/
+}
 
-
+.navbar-link:focus, .navbar-link:active {
+  background-color: transparent; /* Ensure background is transparent */
+}
 
 
 
