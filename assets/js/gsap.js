@@ -2,7 +2,7 @@
 // use a script tag or an external JS file
 document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
+    gsap.registerPlugin(Draggable, InertiaPlugin);
 
 
     // gsap code here!
@@ -52,8 +52,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: 'power4.out',
     });
 
-
+    Draggable.create(".chip", {
+        bounds: ".container",
+        inertia: true,
+    });
     //smooth scroll
-
-
 });
+
