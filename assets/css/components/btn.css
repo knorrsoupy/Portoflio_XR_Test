@@ -73,7 +73,7 @@
   width: 0;
   height: 100%;
   background-color: var(--black);/* Ensure the fill color is black */
-  transition: width 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: width 0.5s cubic-bezier(0.7, 0, 0.2, 1);
   z-index: -1;
 }
 

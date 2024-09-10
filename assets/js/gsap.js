@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+
     // gsap code here!
     gsap.from('.hero-content', {
         duration: 2,

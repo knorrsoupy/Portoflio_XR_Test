@@ -1,6 +1,32 @@
 'use strict';
 
+/**
+ * Progress bar
+ **/
+window.onload = function() {
+  // Set the progress bar width to 0 on page load
+  document.getElementById('progress-bar').style.width = "0%";
+  document.getElementById('progress-bar').style.opacity = 0;
+};
 
+window.onscroll = function() {
+  updateScrollBar();
+};
+
+function updateScrollBar() {
+  document.getElementById('progress-bar').style.opacity = 1;
+  // Get the height of the document
+  let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  
+  // Get the current scroll position
+  let scrollTop = document.documentElement.scrollTop;
+  
+  // Calculate the width percentage
+  let scrollPercentage = (scrollTop / scrollHeight) * 100;
+  
+  // Update the width of the scroll bar
+  document.getElementById('progress-bar').style.width = scrollPercentage + "%";
+}
 
 /**
  * Add eventListener on multiple elements
