@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     font-size: 1.6rem;
-    letter-spacing: 1.3px;
+    letter-spacing: 1px;
     padding-block: 10px;
 }
 .paragraph{
@@ -83,7 +83,15 @@ h6{
     height: auto;
     padding: 30px;
 }
-  
+
+/*
+* change made here
+*/
+.blog {
+  max-width: 800px; /* Set the fixed width for the section content */
+  margin: 0 auto; /* Center the section content horizontally */
+  position: relative; /* Ensure the section content is positioned relative to the grid */
+}
 
 
 /* RESET & BASIC STYLES

@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 
-.btn {
+/* .btn {
   background-color: var(--button);
   font-size: var(--fs-14);
   flex: 1 1 auto;
@@ -12,14 +12,12 @@
   max-width: max-content;
   letter-spacing: 0.7px;
   padding: 10px 22px;
-  /* box-shadow: 2px 0px 0 -1px var(--shadow-color, var(--black)); */
   transition: var(--transition-1);
 }
 
 
 .btn:is(:hover, :focus-visible) {
   background-color: var(--black, var(--jet));
-  /* transform: translate3d(2px, -2px, 0); */
   transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 }
 
@@ -30,6 +28,68 @@
   background-color: var(--jet);
   --shadow-color: var(--orange-red);
   --hover-bg: var(--orange-red);
+  --hover-shadow-color: var(--jet);
+}
+
+.btn-tertiary {
+  color: var(--jet);
+  background-color: var(--white_a75);
+  --shadow-color: var(--black);
+  --hover-bg: var(--black);
+  --hover-shadow-color: var(--white_a75);
+}
+
+.btn-tertiary:is(:hover, :focus-visible) { color: var(--white_a75); } */
+
+
+/*-----------------------------------*\
+  #btn.css
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #btn.css
+\*-----------------------------------*/
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--button);
+  font-size: var(--fs-14);
+  flex: 1 1 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  max-width: max-content;
+  letter-spacing: 0.7px;
+  padding: 10px 22px;
+  transition: var(--transition-1);
+  z-index: 1;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--black);/* Ensure the fill color is black */
+  transition: width 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.btn:is(:hover, :focus-visible)::before {
+  width: 100%;
+}
+
+.btn:is(:hover, :focus-visible) {
+  color: var(--white); /* Adjust text color on hover as needed */
+}
+
+.btn-primary,
+.btn-secondary { color: var(--black); }
+
+.btn-secondary {
+  background-color: var(--jet);
   --hover-shadow-color: var(--jet);
 }
 

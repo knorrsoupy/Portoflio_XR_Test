@@ -263,6 +263,7 @@ border: 2px solid rgb(129, 129, 129);
   linear-gradient(to right, #e1e1e1 1px, transparent 1px),
   linear-gradient(to bottom, #e1e1e1 1px, transparent 1px);
   background-size: 40px 40px;
+  z-index: 1;
 }
 
 .text-center { 
@@ -475,11 +476,11 @@ u{
    * TYPOGRAPHY
    */
 
-  .headline-lg { --fs-45: 6rem; }
+  .headline-lg { --fs-45: 5.5rem; }
 
-  .headline-md { --fs-38: 4.5rem; }
+  .headline-md { --fs-38: 4rem; }
 
-  .title-md { --fs-26: 3.2rem; }
+  .title-md { --fs-26: 2.9rem; }
 
 
 
