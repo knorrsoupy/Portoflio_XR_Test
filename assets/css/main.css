@@ -77,7 +77,11 @@ padding-bottom: 15px; }
 
 .hero-banner {
   max-width: max-content;
-  margin-inline: auto;
+}
+
+.hero-banner-container {
+  display: flex;
+  justify-content: center;
 }
 
 .project-banner{
@@ -188,6 +192,17 @@ padding-bottom: 15px; }
 
 }
 
+/*
+*PIXEL ART SECTION
+*/
+.pixel-art-animation {
+  position: absolute; /* Remove from document flow */
+  right: 10px; /* Distance from the right edge of the banner */
+  top: 50%; /* Position from the top of the banner */
+  transform: translateY(-50%); /* Center vertically */
+  max-height: 80px; /* Adjust as needed */
+}
+
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -205,15 +220,19 @@ padding-bottom: 15px; }
 
   .client .slider-item { min-width: calc(33.33% - 20px);}
 
-  .client .slider-item .w-100,
+  .client .slider-item,
   .about-banner,
   .skill-banner,
   .cta .container{
     max-width: max-content;
     margin-inline: auto;
   }
-
-
+ 
+  @media (min-width: 992px) {
+    .hero-banner-container {
+      justify-content: flex-end;
+    }
+  }
 
 
   /**
@@ -243,6 +262,7 @@ padding-bottom: 15px; }
     right: -15%;
   }
 
+
 }
 
 
@@ -255,6 +275,7 @@ padding-bottom: 15px; }
     gap: 10px;
     padding-block: 30px ;
   }
+  
   
 }
 
@@ -307,6 +328,24 @@ padding-bottom: 15px; }
  .body-sm{
     font-size: 1.4rem;
  }
+}
+
+@media screen and (max-width: 475px){
+  .chip-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-block: 30px ;
+  }
+  .body-sm{
+    font-size: 1.4rem;
+  }
+  .pixel-art-animation{
+    max-height: 60px;
+  }
+  
 }
 
 /*
