@@ -429,22 +429,33 @@ u{
 .footer {
   background-color: var(--jet);
   color: var(--white_a75);
-  border-block-start: 1px solid var(--white_a10);
-  /* padding-block: 18px; */
+  border-top: 1px solid var(--white_a10);
+  ;
+   /* padding-block: 18px;  */
 }
 
 .social-list {
+  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 18px;
-  margin-block-end: 15px;
+  gap:1em;
+  align-items: center;
+  padding-top: 1em;
 }
 
 .social-link { font-size: 1.8rem; }
 
 .social-link:is(:hover, :focus-visible) { color: var(--white); }
 
-
+.signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  padding-top: 20px;
+  margin-top: 1em; /* Add some space above the signature */
+  padding-bottom: 20px;
+}
 
 
 
