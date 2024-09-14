@@ -99,3 +99,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+/*
+*footer part
+*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.querySelectorAll('.footer').forEach(element => {
+        element.innerHTML = data;
+      });
+    });
+});
+
