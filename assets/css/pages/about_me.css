@@ -59,9 +59,9 @@
 .container{
   display: grid;
   grid-template-columns: 1fr;
-  gap: 15px;
+  /* gap: 15px; */
   font-size: large;
-  line-height: 1.8;
+  /* line-height: 1.8; */
 
 }
 
@@ -73,13 +73,17 @@
 }
 
 .hover-div {
-  padding: 20px 20px;
-  min-width: 330px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:40px;
+  padding-bottom: 40px;
+  min-width: 340px;
   background-color: #b7b7b7;
   color: rgb(58, 58, 58);
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
   position: relative;
+  margin-bottom: 20px; 
 
   /* border:  rgb(85, 85, 85) 1px solid; */
 }
@@ -142,6 +146,7 @@
 .text-md{
   font-size: 1.5rem;
   font-weight: 400;
+  margin-bottom: 20px;
 
 }
 .text-sm{
