@@ -47,7 +47,7 @@
    * typography
    */
    /* font-family */
-  --ff-roboto: 'Roboto Mono', monospace;
+  --ff-roboto: 'Roboto Mono', 'Courier New', monospace;
   --ff-ibmplex: 'IBM Plex Mono', monospace;
   --ff-jetbrains: 'JetBrains Mono', monospace;
   --ff-consolas: 'Consolas', monospace;
