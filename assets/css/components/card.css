@@ -42,6 +42,10 @@
   height: 100px;
 }
 
+.noHover{
+  pointer-events: none;
+}
+
 .card-md .card-media {
   width: 70px;
   height: 70px;
