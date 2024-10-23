@@ -318,6 +318,11 @@ padding-bottom: 15px; }
     gap: 10px;
     padding-block: 30px ;
   }
+
+  .job-container {
+    justify-self: center;
+    font-size: 1.4rem;
+  }
   
   
 }
