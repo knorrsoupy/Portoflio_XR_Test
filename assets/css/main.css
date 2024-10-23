@@ -320,7 +320,9 @@ padding-bottom: 15px; }
   }
 
   .job-container {
+    display: flex;
     justify-self: center;
+    align-items: center;
     font-size: 1.4rem;
   }
   
@@ -378,7 +380,9 @@ padding-bottom: 15px; }
  }
 
  .job-container {
+  display: flex;
   justify-self: center;
+  align-items: center;
   font-size: 1.4rem;
 }
 }
