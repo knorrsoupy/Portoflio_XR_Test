@@ -320,12 +320,12 @@ padding-bottom: 15px; }
   }
 
   .job-container {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    font-size: 1.4rem;
-  }
-  
+  display: flex;
+  justify-self: center;
+  font-size: 1.4rem;
+  margin: 0 auto; /* Center the container */
+  margin-bottom: 10px;
+}
   
 }
 
@@ -382,8 +382,9 @@ padding-bottom: 15px; }
  .job-container {
   display: flex;
   justify-self: center;
-  align-items: center;
   font-size: 1.4rem;
+  margin: 0 auto; /* Center the container */
+  margin-bottom: 10px;
 }
 }
 
@@ -401,6 +402,14 @@ padding-bottom: 15px; }
   }
   .pixel-art-animation{
     max-height: 60px;
+  }
+
+  .job-container {
+    display: flex;
+    justify-self: center;
+    font-size: 1.4rem;
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 10px;
   }
 }
 
