@@ -29,9 +29,6 @@
 @import url("./components/card.css");
 
 
-
-
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -191,6 +188,27 @@ padding-bottom: 15px; }
 
 }
 
+/*
+* WIDTH OF THE JOB CONTAINER
+*/
+
+.job-container {
+  font-size: 1.4rem;
+  max-width: max-content;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding: 8px 16px;
+  display: flex;
+  background-color: var(--jet);
+  margin-bottom: 10px;
+  color: var(--white);
+  border-radius: 2px;
+}
+
+.static-symbol {
+  margin-right: 3px; /* Add some space between > and the text */
+}
+
 
 /*
 * GIF SECTION
@@ -288,7 +306,6 @@ padding-bottom: 15px; }
     right: -15%;
   }
 
-
 }
 
 
@@ -354,6 +371,11 @@ padding-bottom: 15px; }
  .body-sm{
     font-size: 1.4rem;
  }
+
+ .job-container {
+  justify-self: center;
+  font-size: 1.4rem;
+}
 }
 
 @media screen and (max-width: 475px){

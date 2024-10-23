@@ -115,3 +115,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+/*
+*changing title
+*/
+document.addEventListener('DOMContentLoaded', function() {
+  let typed = new Typed('#job-title', {
+      strings: ['DESIGNER','ENGINEER','CREATIVE_TECHNOLOGIST'],
+      typeSpeed: 70,
+      backSpeed: 50,
+      backDelay: 1500,
+      startDelay: 100,
+      loop: true,
+      cursorChar: '_',
+      smartbackspace: true,
+  });
+});
