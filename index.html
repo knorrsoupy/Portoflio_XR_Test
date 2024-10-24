@@ -23,6 +23,10 @@
   <meta name="title" content="Souparna Roy . XR Designer . UX Designer . Digital Artist">
   <meta name="description" content="This is a personal portfolio by souparna roy">
 
+  <!-- Add to head -->
+<link rel="preload" as="image" href="./assets/images/Profile-r-bg.png">
+<link rel="preload" as="style" href="./assets/css/main.css">
+
   <!-- 
     - favicon
   -->
@@ -31,9 +35,8 @@
   <!-- 
     - google font link
   -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Combine Google Font requests and add display=swap -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
   <!-- 
     - custom css link
@@ -48,13 +51,13 @@
  <!---
  -TYPING ANIMATION
  -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+ <script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
 
   <!--GSAP -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
 
   <script src="./assets/js/gsap.js"></script>
 
@@ -66,9 +69,6 @@
   <div class="preloader" data-preloader>
     <div class="preloader-circle"></div>
   </div>
-
-
-
 
 
   <!-- 
@@ -112,9 +112,6 @@
     </div>
   </header>
 
-
-
-
   <main>
     <article>
 
@@ -126,12 +123,6 @@
         <div class="container">
 
           <div class="hero-content">
-            <!--
-            <div class="chip-container">
-              <div class="chip">CREATIVE TECHNOLOGIST</div>
-             
-            </div>
-          -->
             
             <div class="job-container">
               
@@ -159,16 +150,12 @@
           <div class="hero-banner-container">
           <figure class="hero-banner hero-banner-right" 
           style="background-color: rgb(142, 142, 142);">
-            <img src="./assets/images/Profile-r-bg.png" class="w-100" style="max-width: 400px;" alt="Souparna Roy, XR Designer"  >
+            <img src="./assets/images/Profile-r-bg.png" class="w-100" style="max-width: 400px;" alt="Souparna Roy, XR Designer" loading="lazy" >
           </figure>
           </div>
 
         </div>
       </section>
-
-
-
-
 
       <!-- 
         - #PROJECTS
@@ -176,20 +163,12 @@
 
       <section class="project-banner pin" aria-label="Trusted client" >
        
-        
-
         <div class="container">
           <h2 class="section-title headline-md" id="portfolio"> 
             <b>FEATURED_WORKS</b>
           </h2>           
         </div>
-        <!--
-        <img src="assets/images/Spaceship.gif" class="pixel-art-animation" alt="Pixel Art Animation">
-        -->
-          
-        
       </section>
-
 
       <!-- 
         - #PROJECTS
@@ -212,21 +191,10 @@
                 <div class="card card-lg noHover">
 
                   <div class="project-card">
-                    <!--
-                    <div class="project content">
-                      <img class="image-png" src="/work/Project/Vikrant/Vikrant Thumbnail _index.png" alt="Image description" style="width: 100%;">
-                    </div>
-                  -->
+
                     <div class="project-content">    
                       <h3 class="card-title"> <b>ALO: An ERP Therapy in VR under TCS Interactive</b></h2>
                       <p class="card-text">It's a Virtual Reality ERP (Exposure Risk and Prevention ) application for patients with Contamination OCD, using gamification to engage users to reduce anxiety and stress.</p>
-                      
-                      <!--
-                      <div class="tag-container">
-                          <p class="tag">VR</p>    
-                          <p class="tag">Game Design</p>                    
-                      </div>
-                       -->
                       
                       <a class="btn btn-tertiary" style="color: rgb(221, 43, 43);"><b>PROJECT UNDER NDA</b> ❌</a>
                     </div>
@@ -242,18 +210,14 @@
                 <div class="card card-lg">
 
                   <div class="project-card">
-                    <!--
-                    <div class="project content">
-                      <img class="image-png" src="/work/Project/Vikrant/Vikrant Thumbnail _index.png" alt="Image description" style="width: 100%;">
-                    </div>
-                  -->
+
                     <div class="project-content">    
                       <h3 class="card-title"> <b>VIKRANTH: A MR Shooting Experience</b></h3>
                       <p class="card-text">This is a mixed reality application where you embark on a journey and look for hidden treasures. Dodge and Defeat enemies to succeed. But, remember the time is ticking.</p>
                         
                       <a href="./vikrant.html" class="btn btn-tertiary">View Project ></a>
                     </div>
-                    <img src="./work/gif/vikranth.gif" class="gif-img" alt="GIF">
+                    <img src="./work/gif/vikranth.gif" class="gif-img" loading="lazy" alt="GIF">
 
                     
                   </div>
@@ -276,36 +240,13 @@
                       <a href="./moonbase_vr.html" class="btn btn-tertiary">View Project ></a>
                     </div>
 
-                    <img src="./work/gif/VR_Shooter.gif" class="gif-img" alt="GIF">
+                    <img src="./work/gif/VR_Shooter.gif" class="gif-img" alt="GIF" loading="lazy">
 
                   </div>
 
                 </div>
               </li>
               <!--project two ends -->
-              
-              <!--
-              project two starts 
-              <li>
-                <div class="card card-lg">
-
-                  <div class="project-card">
-                    
-                    <div class="project content">    
-                      <h3 class="card-title"> <b>LUMOS: A VR Gaming Experience</b></h2>
-                      <p class="card-text">
-                        Lumos VR is a virtual reality gaming experience that aims to give users a sense of their childhood. It gives users the ability to interact with the environment.
-                      
-                      </p>                   
-                      <a href="./lumos_vr.html" class="btn btn-tertiary">View Project ></a>
-                    </div>
-                  </div>
-
-                </div>
-              </li>
-              project two ends 
-              -->
-         
 
               <!--project three starts -->
               <li>
@@ -320,7 +261,7 @@
                       <a href="./Kavach_ux.html" class="btn btn-tertiary">View Project ></a>
                     </div>
 
-                    <img src="./work/gif/kavach.gif" class="gif-img" alt="GIF">
+                    <img src="./work/gif/kavach.gif" class="gif-img" alt="GIF" loading="lazy">
                   </div>
 
                 </div>
@@ -342,7 +283,7 @@
                       <a href="./film_vr.html" class="btn btn-tertiary">View Project ></a>
                     </div>
 
-                    <img src="./work/gif/film.gif" class="gif-img" alt="GIF">
+                    <img src="./work/gif/film.gif" class="gif-img" alt="GIF" loading="lazy">
                   </div>
 
                 </div>
@@ -363,7 +304,7 @@
                       <a href="./environment_design.html" class="btn btn-tertiary">View Project ></a>
                     </div>
 
-                    <img src="./work/gif/environment.gif" class="gif-img" alt="GIF">
+                    <img src="./work/gif/environment.gif" class="gif-img" alt="GIF" loading="lazy">
 
                   </div>
 
@@ -374,9 +315,6 @@
             </ul>
 
           </div>
-
-          
-
 
             <h2 class="section-title headline-md" id="portfolio"> 
               <b style="color: #5b5b5b;">UPCOMING_STUFF</b>
@@ -426,11 +364,6 @@
         </div>
       </section>
 
-     
-
-
-
-
       <!-- 
         - #CTA
       -->
@@ -462,8 +395,8 @@
   <!-- 
     - ionicon
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
