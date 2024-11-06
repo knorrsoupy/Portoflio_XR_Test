@@ -15,15 +15,13 @@
  * Media queries..................Responsive for all devices
  */
 
-
- /*-----------------------------------*\
-   smooth scroll
-\*-----------------------------------*/
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
 
 :root {
 
@@ -47,10 +45,10 @@
    * typography
    */
    /* font-family */
-  --ff-roboto: 'Roboto Mono', 'Inconsolata','Source Code Pro', monospace;
+  --ff-roboto: 'Roboto Mono', monospace,'Source Code Pro', monospace;
   --ff-ibmplex: 'IBM Plex Mono', monospace;
-  --ff-jetbrains: 'JetBrains Mono', monospace;
-  --ff-consolas: 'Consolas', monospace;
+  --ff-source: 'Source Code Pro', monospace;
+  
 
   --fs-45: 4.5rem;
   --fs-38: 3.8rem;
@@ -149,7 +147,7 @@ address { font-style: normal; }
 
 /* change the typeface here */
 html {
-  font-family: var(--ff-roboto) !important;  
+  font-family: var(--ff-roboto), monospace, sans-serif !important;  
   font-size: 10px;
   scroll-behavior: smooth;
 }
