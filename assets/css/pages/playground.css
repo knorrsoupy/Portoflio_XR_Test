@@ -10,7 +10,7 @@
  * MAIN CONTENT
  * Portfolio......................Portfolio style
  */
-
+ @import url('../components/btn.css');
 
 :root{
   --color-grey : hsl(0, 0%, 44%);
@@ -24,7 +24,7 @@
   #COMPONENTS
 \*-----------------------------------*/
 
-@import url('../components/btn.css');
+
 
 /*-----------------------------------*\
   #HEADER
