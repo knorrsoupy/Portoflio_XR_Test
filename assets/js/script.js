@@ -31,7 +31,9 @@ function updateScrollBar() {
   let scrollPercentage = (scrollTop / scrollHeight) * 100;
   
   // Update the width of the scroll bar
-  document.getElementById('progress-bar').style.width = scrollPercentage + "%";
+  if (progressBar) {
+    progressBar.style.width = scrollPercentage + "%";
+  }
 }
 
 /**
