@@ -127,7 +127,9 @@ document.addEventListener("DOMContentLoaded", function() {
 *changing title
 */
 document.addEventListener('DOMContentLoaded', function() {
-  new Typed('#job-title', {
+  const job= document.querySelector('#job-title');
+  if(job){
+  let typed = new Typed('#job-title', {
       strings: ['DESIGNER','ENGINEER','CREATIVE_TECHNOLOGIST'],
       typeSpeed: 70,
       backSpeed: 50,
@@ -137,4 +139,5 @@ document.addEventListener('DOMContentLoaded', function() {
       cursorChar: '_',
       smartbackspace: true,
   });
+}
 });
