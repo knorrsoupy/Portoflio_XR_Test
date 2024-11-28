@@ -5,8 +5,11 @@
  **/
 window.onload = function() {
   // Set the progress bar width to 0 on page load
-  document.getElementById('progress-bar').style.width = "0%";
-  document.getElementById('progress-bar').style.opacity = 0;
+  const progressBar = document.getElementById('progress-bar');
+  if (progressBar) {
+    progressBar.style.width = "0%";
+    progressBar.style.opacity = 0;
+  }
 };
 
 window.onscroll = function() {
@@ -14,7 +17,10 @@ window.onscroll = function() {
 };
 
 function updateScrollBar() {
-  document.getElementById('progress-bar').style.opacity = 1;
+  const progressBar = document.getElementById('progress-bar');
+  if (progressBar) {
+    progressBar.style.opacity = 1;
+  }
   // Get the height of the document
   let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   
